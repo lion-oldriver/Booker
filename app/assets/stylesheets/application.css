@@ -25,6 +25,7 @@ body{
   margin:20px 35px;
 }
 
+/*トップページ*/
 .top-text{
   margin:20px 30px;
   line-height:3;
@@ -34,6 +35,7 @@ body{
   margin-left:30px;
 }
 
+/*一覧表示ページ*/
 .index-top{
   margin:15px;
 }
@@ -62,10 +64,12 @@ td{
   background-color:#e8e8e8;
 }
 
+/*詳細ページ*/
 .show{
   margin:0 20px 20px;
 }
 
+/*編集ページ*/
 .edit-form{
   margin-bottom:10px;
 }
