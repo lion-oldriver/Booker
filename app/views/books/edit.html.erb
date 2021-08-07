@@ -1,10 +1,32 @@
-<h1>Editing Book</h1>
+<h2>Editing Book</h2>
+<% if @book.errors.any? %>
+ <div class="error-box">
+  <h4 class="error-head">
+   <% if @book.errors.count == 2 %>
+     <%= @book.errors.count %> errors prohibited this book from bgining saved:
+   <% end %>
+   <% if @book.errors.count == 1 %>
+     <%= @book.errors.count %> error prohibited this book from bgining saved:
+   <% end %>
+  </h4>
+  <ul class="error-message">
+   <% @book.errors.full_messages.each do |message| %>
+     <li><%= message %></li>
+   <% end %>
+  </ul>
+ </div>
+<% end %>
+
 <%= form_with model:@book,local:true do |f| %>
- <p>Title</p>
- <%= f.text_field:title %>
- <p>Body</p>
- <%= f.text_area:body %>
- <%= f.submit"Update Book" %>
+ <div class="edit-form">
+  <p>Title</p>
+  <%= f.text_field:title %>
+ </div>
+ <div class="edit-form">
+  <p>Body</p>
+  <%= f.text_area:body %>
+ </div>
+ <div class="edit-form"><%= f.submit"Update Book" %></div>
 <% end %>
 
 <%= link_to "Show",book_path(@book) %>

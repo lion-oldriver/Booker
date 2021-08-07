@@ -22,6 +22,16 @@
 
 body{
   font-family:serif,sans-serif;
+  margin:20px 35px;
+}
+
+.top-text{
+  margin:20px 30px;
+  line-height:3;
+}
+
+.start-button{
+  margin-left:30px;
 }
 
 .index-top{
@@ -29,10 +39,39 @@ body{
 }
 
 table{
-  margin-left:20px;
+  margin-bottom:20px;
 }
 
 td{
-  padding:5px;
+  padding:0 5px 2px 5px;
+}
+
+.error-box{
+  border:solid 2px red;
+  width:50%;
+}
+
+.error-head{
+  color:white;
+  background-color:red;
+  padding:5px 10px;
+}
+
+.error-message{
+  padding:20px 30px;
+  background-color:#e8e8e8;
+}
+
+.show{
+  margin:0 20px 20px;
+}
+
+.edit-form{
+  margin-bottom:10px;
+}
+
+.flash-message{
+  color:green;
+  margin:20px;
 }
 
